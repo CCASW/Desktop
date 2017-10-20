@@ -1,0 +1,17 @@
+def order(a,b,c):
+    if (a<b and a<c):
+        if (b<c):
+            return (a,b,c)
+        else:
+            return (a,c,b)
+    elif (a>b and a>c):
+       if (b>c):
+           return (c,b,a)
+       else:
+           return (b,c,a)
+    elif (a>b):
+        return (b,a,c)
+    else:
+        return (c,a,b)
+            
+print(order(4905,45,3))
